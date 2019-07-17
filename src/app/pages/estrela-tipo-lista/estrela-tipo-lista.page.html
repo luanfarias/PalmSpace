@@ -1,0 +1,338 @@
+<ion-content color="dark">
+
+  <div [ngSwitch] = "tipoSelecionado" text-justify>
+    
+    <ion-card *ngSwitchCase = "'anaBranca'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/4rf2xH-2FTc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Anã Branca</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Estrela pequena e quente, que se acredita assinalar o estágio final de evolução de uma Estrela como o Sol. Uma Anã branca é mais ou menos do tamanho da Terra, embora contenha tanta matéria quanto o Sol. Essa matéria compacta é tão densa que um dedal dela pesaria uma tonelada ou mais. As Anãs brancas são tão fracas que mesmo as mais próximas de nós, que giram em torno de Sirius e de Procyon, só são vistas com telescópio.  
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+    
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'anaVermelha'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/cTjK0G1R6-o" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Anã Vermelha</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        Estrela fria e fraca, de massa menor que a do Sol. As Anãs vermelhas são provavelmente as Estrelas mais abundantes em nossa galáxia, embora seja difícil observá-las em virtude de seu brilho fraco. Mesmo as Anãs vermelhas mais próximas, Próxima Centauri e a Estrela de Barnard, são invisíveis sem telescópio. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'binariaEclipsante'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/OJoJ7kDMmGY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Binária Eclipsante</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        Par de Estrelas que giram em órbitas uma da outra. Assim, periodicamente uma delas passa em frente da outra para o observador na Terra. A primeira binária eclipsante descoberta foi Algol. 
+
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'anaMarrom'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/C1k9hl88Ni0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Anã Marrom</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        É um corpo celeste cuja massa é pequena demais para que ocorra uma fusão nuclear em seu núcleo, a temperature e a pressão do núcleo são insuficientes para que a fusão aconteça. Por isso, não pode ser considerada realmente uma estrela.
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'estrelasBinarias'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/erKViZx8Qsc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Estrelas Binárias</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Par de Estrelas que giram uma ao redor da outra. A maioria das binárias dá, a olho nu, a impressão de ser uma Estrela simples. Algumas dessas Estrelas estão tão próximas entre si que sua existência só pode ser deduzida a partir da análise espectroscópica da luz que emitem. Em algumas binárias uma Estrela eclipsa periodicamente a outra. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'estrelaNeutrons'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/sgkDoSbHHVU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Estrelas de Nêutrons</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Pequena Estrela densa, que se acredita assinalar o ponto final da evolução de Estrelas com massa maior que o Sol. Uma Estrela de nêutrons tem diâmetro de apenas cerca de 15 quilômetro, embora contenha tanta matéria quanto nosso Sol. Essa matéria está comprimida de tal maneira que um dedal pesaria milhares de milhões de toneladas. Acredita-se que os pulsares, poderosas fontes de ondas de rádio, sejam Estrela de nêutrons. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+        
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'estrelaVariavel'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/sXJBrRmHPj8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Estrelas Variável</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Estrela cuja produção de luz apresenta variações. Algumas variam de tamanho, como as variáveis cefeídas; outras são Estrelas duplas próximas, que periodicamente se eclipsam. Em 1975, mais de 25.000 Estrelas foram classificadas em nossa galáxia. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+          
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'giganteVermelha'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/Ys0hvi-5b_Q" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Gigante Vermelha</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Estrelas maiores que o Sol, e de temperatura mais baixa. Acredita-se que o estágio de gigante vermelha seja alcançado próximo ao fim do ciclo de existência de uma Estrela, quando ela se expande por força da pressão da radiação produzida pelas reações termonucleares ocorridas em seu núcleo. O Sol deverá se transformar numa gigante vermelha semelhante a Arcturus, dentro de mais ou menos 5.000 milhões de anos. As Estrelas que se tornam dezenas ou centenas de vezes maiores do que o Sol são chamadas supergigantes. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+          
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'giganteAzul'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/CNBj4gqppVM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Gigante Azul</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Uma estrela gigante azul é uma estrela azul, enorme, muito quente e muito luminosa. Ela não é uma estrela da seqüência principal mas sim uma estrela pós seqüência principal. Estas estrelas, incrivelmente quentes, queimam hélio. Estas gigantes têm o tipo espectral O ou B e são muito raras e muito brilhantes. As estrelas gigantes azuis têm, pelo menos, 18 vezes a massa do Sol. Exemplos incluem Rigel e Regulus. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+          
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'nebulosa'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/PgS0Ezb_2no" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Nebulosa</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Massa de poeira e gás em nossa galáxia. Algumas nebulosas são brilhantes, o que resulta da difusão da luz de Estrelas situadas em seu interior. Outras são mais escuras.  
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'nebulosaPlanetaria'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/fE5JgYT10ck" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Nebulosa Planetária</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Massa esférica de gás que, vista através de um pequeno telescópio, apresenta um disco, semelhante a um planeta, o que explica o seu nome. De fato, essas nebulosas nada têm a ver com planetas; acredita-se que sejam as camadas externas de antigas Estrelas gigantes vermelhas que passaram a vagar no espaço; seus núcleos teriam se transformado em anãs brancas. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'pulsar'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/jwC6_oWwbSE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Pulsar</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Fonte de rádio de pulsação rápida que se acredita ser uma Estrela de nêutrons giratória e que emite um feixe de radiação semelhante à luz de um farol. Os pulsares foram descobertos em 1967, e hoje já são conhecidos cerca de 150 pulsares. O pulsar mais rápido pulsa 30 vezes por segundo (centro da nebulosa do Caranguejo) e os mais lentos pulsam uma vez em cada 3 segundos, mais ou menos. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'quasar'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/EWd27AS-_yI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Quasar</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Objeto de grande intensidade de brilho, situado num ponto remoto do espaço, e que se acredita ser o centro de uma galáxia em formação. Os quasares são tão pequenos que parecem Estrelas mesmo nos maiores telescópios; mas eles produzem milhares de vezes mais energia do que uma galáxia como a Via-Láctea. Talvez sua energia se origine de um buraco negro gigante existente em seu centro. 
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'supernova'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/8en5uDqw0aM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Supernova</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Explosão brilhante de uma Estrela de massa elevada, no fim de sua existência. Numa supernova a Estrela brilha com uma intensidade milhões de vezes maiores do que o seu brilho normal. As camadas exteriores da Estrela são expelidas, formando um objeto como a nebulosa do Caranguejo; o núcleo da Estrela pode se transformar numa Estrela de nêutrons, ou mesmo num buraco negro.  
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'variavelCafeida'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/37yF5-9GsSU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Tipos de estrelas</ion-card-subtitle>
+        <ion-card-title>Variável Cafeída</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+          Tipo de Estrela cuja produção de luz varia regularmente, à medida que se contrai e se expande. Trata-se de Estrelas gigantes, dezenas de vezes maiores que o Sol, e centenas de milhares de vezes mais brilhantes. A variáveis cefeídas são importantes indicadores de distância na astronomia.
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+            
+    </ion-card>
+
+  </div>
+  
+</ion-content>

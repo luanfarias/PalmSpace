@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Fechar lista</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="fecharLista()">
+        <ion-icon slot="start" name="close" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="dark">
+
+    
+
+    <div *ngFor='let exoplaneta of listaExoplanetas | slice:0:limit'>
+      <ion-card color="primary">
+        <ion-card-header>
+          <ion-card-title>{{exoplaneta.pl_name}}</ion-card-title>
+        </ion-card-header>
+            
+        <ion-card-content text-justify>
+            <p><b>Estrela hospedeira:</b> {{exoplaneta.pl_hostname}}</p>
+            <p><b>Método de descoberta:</b> {{exoplaneta.pl_discmethod}}</p>
+            <p><b>Meio de descoberta:</b> {{exoplaneta.pl_facility}}</p>
+            <p><b>Data da última atualização:</b> {{exoplaneta.rowupdate}}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  
+    <ion-infinite-scroll (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

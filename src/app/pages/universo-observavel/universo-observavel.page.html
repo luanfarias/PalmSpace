@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Universo Observável</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-img src="assets/universo-observavel.gif"></ion-img>
+  <p text-center>
+    <b>Você já se perguntou qual o tamanho do Universo?</b>
+  </p>
+  
+  <div padding text-justify>
+    <p>
+      Assim como em muitas questões da ciência, dizer qual o tamanho do Universo não é uma tarefa simples. Não conseguimos saber ao certo se há algo além do que nossos telescópios mais potentes conseguem registrar.
+    </p>
+  
+    <p>
+        Não sabemos se nosso universo é de tamanho finito ou infinito, por isso os cientistas adotam o conceito de universo observável. Sendo assim, universo observável é a parte que contém todas as coisas que podem ser observadas da Terra, incluindo imagens de satélites, telescópios e de observações a olho nu.
+    </p>
+  
+    <p>
+        Como o marco zero dessa contagem do universo seria a teoria do Big Bang, que teria acontecido a cerca de 13,8 bilhões de anos, então conclui-se que qualquer objeto observável hoje da Terra estaria, no máximo, a um raio de distância de 13,8 bilhões de anos-luz e o diâmetro do universo observável seria algo em torno de 27,6 bilhões de anos-luz, correto? <b>A resposta é não.</b>
+    </p>
+  
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-subtitle>Curiosidade</ion-card-subtitle>
+        <ion-card-title>Um pouco de cores</ion-card-title>
+      </ion-card-header>
+      <ion-card-content text-justify>
+        <img src="assets/universo-observavel-prisma.jpg">
+        <br>
+        <p>
+          As cores nada mais são do que ondas eletromagnéticas que vibram em determinadas frequências da luz, sendo que a mais longa que os humanos conseguem enxergar é a vermelha e a mais curta é a roxa.
+        </p>
+        <p>
+          Sabendo como a luz se propaga e interage com a matéria, nós conseguimos saber temperaturas, composição e até a localização no espaço de um objeto.
+        </p>
+      </ion-card-content>
+    </ion-card><br>
+  
+    <p>
+      Outra caracteristica importante é o <b>Efeito Doppler</b>:
+    </p>
+  
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-subtitle>Curiosidades</ion-card-subtitle>
+        <ion-card-title>Efeito Doppler</ion-card-title>
+      </ion-card-header>
+        
+      <ion-card-content text-justify>
+        <img src="assets/efeito-doppler.jpg">
+        <br>
+        <p>
+          O efeito ocorre quando existe aproximação ou afastamento relativo entre uma fonte de ondas e um observador. Esse fenômeno acontece pelo fato de que a velocidade de propagação de uma onda, seja ela qual for, depende exclusivamente do meio pelo qual essa onda propaga-se. Assim, mesmo que a fonte das ondas ou o observador mova-se, a velocidade de propagação da onda não será alterada. No entanto, ocorrerá uma variação no comprimento de onda e na frequência da onda captada pelo observador.
+        </p>
+        <p>
+          Como a velocidade de propagação das ondas sonoras depende apenas do meio, a velocidade relativa entre as ondas sonoras e ambos observadores será igual, tanto em relação ao observador que se afasta quanto em relação ao observador que se aproxima da fonte das ondas.
+        </p>
+        <p>
+          Para que a velocidade permaneça constante para ambos os observadores, ocorrem mudanças no comprimento de onda (espaço necessário para a onda completar uma oscilação) e na sua frequência. Como essas grandezas são inversamente proporcionais, pode-se dizer que:
+        </p>
+        <ul>
+          <li>
+            O observador que vê a ambulância afastando-se ouvirá um som com maior comprimento de onda e menor frequência, portanto, mais grave
+          </li>
+          <li>
+            O observador que vê a ambulância aproximando-se ouvirá um som de maior frequência e menor comprimento de onda, portanto, mais agudo.
+          </li>
+        </ul>
+  
+        <div class="video-responsive">
+            <iframe width="909" height="682" src="https://www.youtube.com/embed/DVoVQWW6DWQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  
+      </ion-card-content>
+    </ion-card><br>
+  
+    <p>
+      O Efeito Doppler pode ajudar a esclarecer o motivo de a luz emitida por determinadas fontes cósmicas tendem para um ou para outro extremo do espectro eletromagnético.
+    </p>
+  
+    <p>
+      Sabendo que o Efeito Doppler altera um comprimento de onda com base na direção em que um objeto está se movendo. Sendo assim, quando um objeto está se movendo na direção oposta à nossa, os comprimentos de onda da luz são “esticados” e aparecem tendendo para o vermelho (mais longos); já quando um objeto está se deslocando em nossa direção, os comprimentos de onda são comprimidos e, portanto, aparecem azulados (mais curtos). É aqui que o “desvio para o vermelho” entra em cena.
+    </p>
+  
+    <p>
+      Quando os astrônomos começaram a medir a distância que separa as
+        <ion-chip color="primary" outline (click)="abrirPagina('galaxia')">
+          <ion-label>galáxias</ion-label>
+        </ion-chip>
+        de nós – com base na luz que elas emitem – notaram que o comprimento de onda vindo delas tendiam para o vermelho e que além de tender para o vermelho, esse desvio para o vermelho também estava aumentando, significando que esses corpos estavam cada vez mais longe. Isso significava que o universo estava e está em expansão.
+    </p>
+  
+    <p>
+      Por conta dessa expansão, os cientistas acreditam que o diâmetro do universo observável é de 93 bilhões de anos-luz, aproximadamente.
+    </p>
+  
+    <p>
+      Segundo os cientistas é como se uma energia estranha estivesse acelerando a expansão do universo. Essa energia estranha é chamada de energia escura, e essa energia age em larga escala em oposição à gravidade. Determinar sua origem é um dos maiores desafios da cosmologia moderna.
+    </p>
+  
+    <p><b>O nosso Universo é fascinante. Clique no botão abaixo e tenha acesso a imagens e vídeos cedidos pela NASA</b></p>
+    <ion-button expand="full" routerLink="/explorar-cosmos">
+      Descubra o cosmos
+    </ion-button>
+  </div>
+  
+</ion-content>
+  

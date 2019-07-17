@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Exoplanetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" text-justify>
+  <ion-img src="assets/exoplanetass.gif"></ion-img>
+  <label class="legenda">
+    Exemplo do efeito que um planeta faz ao passar em frente ao Sol.
+  </label>
+  <br>
+  <p text-center><b>Qualquer outro planeta que não pertença ao Sistema Solar é considerado um exoplaneta.</b></p>
+
+  <div text-justify padding>
+    <p>
+      Atualmente há milhares de planetas catalogados que foram descobertos fora do sistema solar. Apesar da grande quantidade de planetas poucos estão dentro da <b>zona habiável</b>, imposibilitando a existencia de outros seres. 
+    </p>
+
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-subtitle>Curiosidades</ion-card-subtitle>
+        <ion-card-title>Zona habitável</ion-card-title>
+      </ion-card-header>
+        
+      <ion-card-content text-justify>
+        <ion-img src="assets/zona-habitavel.png"></ion-img>
+        <label class="legenda"></label>
+        <br>
+        <p>
+            Zona habitável é uma região no espaço, onde é possível a existência de água líquida na superfície de um planeta ou satélite natural, fator vital que esses corpos celestes abriguem vida. Esses planetas ou satélites naturais obitam uma estrela (exemplo: o sol) e a radiação emitida por essa estrela mantém a água em forma líquida.
+        </p>
+        <br>
+        <p>
+            Planetas dentro da zona habitável faz com que as águas do oceano não fervam por estár perto demais da estrela que emite radiação ou que as águas congelem por estar longe demais da estrela.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-list>
+      <ion-item color="primary" routerLink="/exoplanetas-formacao">
+        <ion-icon class="animated flash delay-3s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Formação de um planeta</ion-label>
+      </ion-item>
+      <ion-item color="primary" routerLink="/exoplanetas-encontrados">
+        <ion-icon class="animated flash delay-3s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Como os planetas são encontrados</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+</ion-content>

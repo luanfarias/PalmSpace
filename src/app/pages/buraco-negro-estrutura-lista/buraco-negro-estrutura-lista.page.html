@@ -1,0 +1,85 @@
+<ion-content color="dark" text-justify>
+
+  <div [ngSwitch] = "sessaoSelecionada">
+    
+    <ion-card *ngSwitchCase = "'disco'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/fCWteTkhd_A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Estrutura do Buraco Negro</ion-card-subtitle>
+        <ion-card-title>Disco de Acreção</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content text-justify>
+        Um buraco negro ao se formar perto de uma estrela, ele acaba engolindo pedaços dessa estrela. Ao cair em direção ao buraco negro, esses pedaços se aquecem muito e formam um disco, chamado de <b>disco de acreção</b>, a rotação acelerada gera atrito o suficiente para  aquecer o material e produzir faixas de raio-x e raio gama.  É através desses raios-X que os astrônomos podem saber da existência dos buracos negros, mesmo que estes não possam ser vistos diretamente.
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+    
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'horizonte'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/0r4UNBlkjZ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Estrutura do Buraco Negro</ion-card-subtitle>
+        <ion-card-title>Horizote de Eventos</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content text-justify>
+        <p>
+            O núcleo do buraco negro, onde a atração da gravidade é tão forte que nem a luz consegue escapar é chamado de <b>horizonte de eventos</b>.
+          </p><br>
+          <p>
+            Na Teoria da Relatividade, o horizonte de eventos é um termo utilizado para as fronteiras do espaço-tempo, definido de acordo com um ponto observador, de onde os eventos não podem interagir com ele. A Luz emitida de um lado do horizonte nunca chega ao observador, assim como tudo o que o cruza nunca mais é visto.
+          </p><br>
+          <p>
+            Em 1905 Albert Einstein afirmou que o tempo e o espaço estão entrelaçados. Mesmo que você esteja parado você está se deslocando, na dimensão do tempo. Segundo a teória, o tempo pode acelerar ou até mesmo parar. Quando um corpo está em movimento o tempo passa mais lento.
+          </p>
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+
+    <ion-card *ngSwitchCase = "'jato'" color="light">
+      <ion-card-header>
+        <div class="video-responsive">
+          <iframe width="909" height="682" src="https://www.youtube.com/embed/TdZdqfD0LTI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <ion-card-subtitle>Estrutura do Buraco Negro</ion-card-subtitle>
+        <ion-card-title>Jato Relativístico</ion-card-title>
+      </ion-card-header>
+      <ion-card-content text-justify>
+        <p>
+            Jatos relativísticos são jatos extremamente poderosos de plasma que emergem dos centros de algumas galáxias ativas, estrelas, como quasares, buracos negros, entre outtros.
+          </p> <br>
+          <p>
+            Seus comprimentos podem atingir vários milhares ou mesmo centenas de milhares de anos luz. Acredita-se que a torção dos campos magnéticos no disco de acreção colima o fluxo ao longo dos eixos de rotação do objeto central, assim, com condições favoráveis, um jato emerge de cada face do disco de acreção. 
+          </p>
+      </ion-card-content>
+
+      <div class="botao" text-center>
+        <ion-button color="medium" (click)="close()">
+          <ion-icon slot="start" name="close" size="large"></ion-icon>
+          Fechar
+        </ion-button>
+      </div>
+      
+    </ion-card>
+  </div>
+
+</ion-content>
+  

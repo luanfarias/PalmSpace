@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Estrelas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-img src="assets/estrela.gif"></ion-img>
+  <p text-center>
+    <b>Como tudo no Universo, as estrelas nascem, vivem e morrem.</b>
+  </p>
+
+  <div padding text-justify>
+    <p>
+      Os pontos luminosos que nós avistamos no céu parecem calmos e tranquilos, mas na verdade as estrelas são como fornalhas gigantes em grande atividade. As estrelas nascem vivem e morrem. Elas produzem elementos químicos e energia.
+    </p>
+    
+    <ion-list>
+      <ion-item color="primary" routerLink="/estrela-formacao">
+        <ion-icon class="animated flash delay-3s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Como as esrelas são formadas</ion-label>
+      </ion-item>
+      
+      <ion-item color="primary" routerLink="/estrela-morte">
+        <ion-icon class="animated flash delay-4s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Como uma estrela morre</ion-label>
+      </ion-item>
+      
+      <ion-item color="primary" routerLink="/estrela-tipo">
+        <ion-icon class="animated flash delay-5s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label >Quais são os tipos de estrelas</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

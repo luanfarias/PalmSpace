@@ -1,0 +1,33 @@
+<ion-content color="dark">
+    <ion-card *ngFor='let dados of apod' color="primary" >
+        <ion-card-header>
+          <ion-card-subtitle>{{dataPadraoBr}}</ion-card-subtitle>
+          <ion-card-title>{{dados.title}}</ion-card-title>
+        </ion-card-header>
+          
+        <ion-card-content *ngIf="dados.media_type == 'image'" text-justify>
+          <ion-img [src]=dados.hdurl></ion-img>
+          <br>
+          <p>{{dados.explanation}}</p>
+        </ion-card-content>
+
+        <ion-card-content *ngIf="dados.media_type == 'video'" text-justify>
+            <div class="video-responsive">
+                <iframe width="909" height="682" [src] = "sanitize(video)" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+          <p>{{dados.explanation}}</p>
+        </ion-card-content>
+
+        <div class="botao" text-center>
+          <ion-button color="primary" (click)="closeModal()">
+            <ion-icon slot="start" name="close" size="large"></ion-icon>
+            Fechar
+          </ion-button>
+        </div>
+        <br>
+      </ion-card>
+
+      {{resultMidia}}
+      
+</ion-content>

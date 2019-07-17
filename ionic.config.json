@@ -1,0 +1,7 @@
+{
+  "name": "astronomia",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Desbravando o cosmos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="dark" text-justify>
+  <p>O cosmos corresponde a toda matéria e energia existante. Ele reúne os astros: planetas, cometas, estrelas, galáxias, nebulosas, satélites, dentre outros.</p>
+  <p>A NASA oferece informações diárias sobre as novas descobertas do universo. Para acessá-las escolha uma data</p>
+  <ion-list>
+    <ion-list-header color="primary">
+      <h2>Escolha uma data</h2>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Escolha uma data</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MM YYYY" [(ngModel)]="myDate" (ionChange)="dataChanged($event)"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="abrirModal()">
+    Desbravar o cosmos
+  </ion-button>
+  <p class="legenda">
+      Todas as informações são cedidas pela
+    <ion-chip color="primary" mode="ios" outline="true">
+      <ion-label>
+          <a href="https://www.nasa.gov/">NASA</a>
+      </ion-label>
+    </ion-chip>.
+  </p>
+</ion-content>

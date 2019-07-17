@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sistema Solar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <ion-img src="assets/sistema-solar.jpg"></ion-img>
+
+  <div padding text-justify>
+
+    <p>O sistema solar é constituído pelo Sol, a maior estrela do nosso sistema, correspondendo a aproximadamente 98% da massa total do sistema solar. Sob o domínio gravitacional do Sol ficam todos os outros corpos celestes, como planetas, asteroides e satélites naturais.</p>
+
+    <ion-list>
+      <ion-item color="primary" routerLink="/sistema-solar-planetas">
+        <ion-icon class="animated flash delay-3s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Planetas</ion-label>
+      </ion-item>
+      
+      <ion-item color="primary" routerLink="/sistema-solar-anoes">
+        <ion-icon class="animated flash delay-4s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Planetas Anões</ion-label>
+      </ion-item>
+
+      <ion-item color="primary" routerLink="/sistema-solar-asteroides">
+        <ion-icon class="animated flash delay-4s" slot="end" name="ios-arrow-forward" ></ion-icon>
+        <ion-label>Asteroides</ion-label>
+      </ion-item>
+    </ion-list>
+    
+    
+  </div>
+  
+</ion-content>
+  

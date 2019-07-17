@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Voltar</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" text-justify>
+  <ion-text color="primary">
+    <h2 text-center>Estrutura de um buraco negro</h2>
+  </ion-text>
+  <br>
+
+  <ion-img src="assets/buraco-negro-estrutura.png"></ion-img>
+
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="abrirModal('disco')" data-desc="Disco de acreção">
+        <ion-icon name="radio-button-on"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="abrirModal('horizonte')" data-desc="Horizonte de eventos">
+        <ion-icon name="radio-button-on"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="abrirModal('jato')" data-desc="Jato relativístico">
+        <ion-icon name="radio-button-on"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/buraco-negro-singularidade" data-desc="Singuridade">
+        <ion-icon name="radio-button-on"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+  

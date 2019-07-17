@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-icon slot="end" name="more" size="large" (click)="abrirFiltro()"></ion-icon>
+    <ion-title>
+      Lista de Exoplanetas
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="dark">
+
+  <div padding text-center>
+
+    <ion-text color="primary">
+      <h2>Exemplo</h2>
+    </ion-text>
+
+    <ion-card color="primary">
+      <ion-card-header>
+        <ion-card-title>Nome do Exoplaneta</ion-card-title>
+      </ion-card-header>
+          
+      <ion-card-content text-justify>
+          <p padding><b>Estrela hospedeira:</b> Nome da estrela</p>
+          <p padding><b>Método de descoberta:</b> Nome do método</p>
+          <p padding><b>Meio de descoberta:</b> Nome da sonda ou observatório ou telescopio</p>
+          <p padding><b>Data da última atualização:</b> Data da última atualiazação de informações sobre o exoplaneta</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button padding (click)="abrirListagem()">
+      Carregar lista
+    </ion-button>
+  </div>
+    
+</ion-content>
+

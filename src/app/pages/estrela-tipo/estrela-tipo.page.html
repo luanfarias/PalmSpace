@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Voltar</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" padding>
+  <ion-text color="primary">
+    <h1 text-center>Tipos de estrelas</h1>
+  </ion-text>
+  <ion-list>
+    <ion-item (click)="abrirModal('anaBranca')" detail>
+      <ion-label>
+        Anã branca
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('anaVermelha')" detail>
+      <ion-label>
+        Anã vermelha
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('anaMarrom')" detail>
+      <ion-label>
+        Anã marrom
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('binariaEclipsante')" detail>
+      <ion-label>
+        Binária eclipsante
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('estrelasBinarias')" detail>
+      <ion-label>
+        Estrelas binárias
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('estrelaNeutrons')" detail>
+      <ion-label>
+        Estrela de nêutrons
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('estrelaVariavel')" detail>
+      <ion-label>
+        Estrela variável
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('giganteAzul')" detail>
+      <ion-label>
+        Gigante azul
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('giganteVermelha')" detail>
+      <ion-label>
+        Gigante vermelha
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('nebulosa')" detail>
+      <ion-label>
+        Nebulosa
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('nebulosaPlanetaria')" detail>
+      <ion-label>
+        Nebulosa planetária
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('pulsar')" detail>
+      <ion-label>
+        Pulsar
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('quasar')" detail>
+      <ion-label>
+        Quasar
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('supernova')" detail>
+      <ion-label>
+        Supernova
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="abrirModal('variavelCafeida')" detail>
+      <ion-label>
+        Variável cafeída
+      </ion-label>
+    </ion-item>
+  </ion-list>
+    
+</ion-content>

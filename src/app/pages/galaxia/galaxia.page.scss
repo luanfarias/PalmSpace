@@ -1,0 +1,24 @@
+
+ion-grid{
+    border: solid lightskyblue 1px;
+    border-radius: 50px;
+}
+
+.titulo{
+    color:rgba(255, 0, 0, 0.651);
+}
+
+.legenda{
+    color: grey;
+    font-size: 12px;
+    padding: 5px;
+}
+
+ion-list{
+    background: #222428;
+}
+
+ion-item {
+    --background: #222428;
+    --color: #ffffff;
+}

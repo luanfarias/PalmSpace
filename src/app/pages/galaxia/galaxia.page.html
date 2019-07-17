@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Galáxia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <ion-img src="assets/galaxia.gif"></ion-img>
+
+  <div text-justify padding>
+    <p>
+      Uma galáxia é composta por nuvens de gás e poeira, um aglomerado de estrelas, planetas, cometas, asteroides e diversos corpos celestes que estão gravitacionalmente ligados. As galáxias também são compostas por matéria escura.
+    </p>
+
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-subtitle>Curiosidades</ion-card-subtitle>
+        <ion-card-title>Materia Escura</ion-card-title>
+      </ion-card-header>
+        
+      <ion-card-content text-justify>
+        <p>
+          Existe uma parte do Universo que os astrônomos sabem que existe, mas ainda não sabem exatamente o que seja. Conseguem medir sua existência por meio da força gravitacional que ela exerce. Por isso é <b>matéria</b>. Não emite nenhuma luz. Por isso é <b>escura</b>.
+        </p>
+        <p>
+          Essa segunda propriedade é justamente o que dificulta seu estudo. Todas as observações de corpos no espaço são feitas a partir da luz ou de outro tipo de radiação eletromagnética emitida ou refletida pelos astros. Como a matéria escura não faz nenhuma dessas coisas, é “invisível”.
+        </p>
+      </ion-card-content>
+    </ion-card><br>
+
+    <h3>Tipos de galáxias:</h3>
+
+    <ion-list>
+      <ion-item routerLink = "/galaxias-tipo-elipticas" detail>
+        <ion-label>
+          Elípticas
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink = "/galaxias-tipo-espirais" detail>
+        <ion-label>
+          Espirais
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink = "/galaxias-tipo-anas" detail>
+        <ion-label>
+          Anãs
+        </ion-label>
+      </ion-item>
+      <ion-item routerLink = "/galaxias-tipo-outras" detail>
+        <ion-label>
+          Outras Morfologias
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

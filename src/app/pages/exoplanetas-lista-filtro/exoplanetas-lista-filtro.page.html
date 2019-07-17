@@ -1,0 +1,27 @@
+<ion-content color="dark">
+
+  <ion-list>
+    <ion-text color="primary">
+      <h5 class="titulo-item">Meio de descoberta</h5>
+      <div class="legenda-opcoes">
+          Seleciona o meio pelo qual o planeta foi descoberto. Seja esse meio uma sonda, observatório, telescopio ou outro tipo de meio.
+      </div>
+    </ion-text>
+    
+    <ion-item>
+      <ion-label>Sonda Kepler</ion-label>
+      <ion-toggle [(ngModel)] = "opKepler" color="primary"></ion-toggle>
+    </ion-item><ion-item>
+        <ion-label>Telescópio Hubble</ion-label>
+        <ion-toggle [(ngModel)] = "opHubble" color="primary"></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+  <div padding text-center>
+      <ion-button (click)="closeFiltro()">
+        <ion-icon slot="start" name="close"></ion-icon>
+        Fechar
+      </ion-button>
+  </div>
+
+</ion-content>
